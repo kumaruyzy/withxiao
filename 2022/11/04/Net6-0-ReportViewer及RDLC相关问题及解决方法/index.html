@@ -8,19 +8,24 @@
 
 <title>
   
-    归档: 2022
+    Flawlessness
   
 </title>
 
-<meta name="description" content="太阳双子上升天秤">
-<meta property="og:type" content="website">
+<meta name="description" content="换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Flawlessness">
-<meta property="og:url" content="https://kumaruyzy.github.io/archives/2022/index.html">
+<meta property="og:url" content="https://kumaruyzy.github.io/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Flawlessness">
-<meta property="og:description" content="太阳双子上升天秤">
+<meta property="og:description" content="换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kumaruyzy.github.io/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/Blog/source_posts/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20221104180615341.png">
+<meta property="og:image" content="https://kumaruyzy.github.io/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/Blog/source_posts/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20221104180940498.png">
+<meta property="article:published_time" content="2022-11-04T11:07:40.699Z">
+<meta property="article:modified_time" content="2022-11-04T11:13:14.910Z">
 <meta property="article:author" content="KUMARU">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kumaruyzy.github.io/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/Blog/source_posts/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/image-20221104180615341.png">
 
 
   <link rel="alternative" href="/atom.xml" title="Flawlessness" type="application/atom+xml">
@@ -147,43 +152,22 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-Net6-0-ReportViewer及RDLC相关问题及解决方法" class="article article-type-post">
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2022" class="archive-year">2022</a></h1>
-        </div>
-        <div class="post-list">
-    
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" >
-  
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2022/11/04/Net6-0-ReportViewer%E5%8F%8ARDLC%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2022-11-04
 </span>
-</a>
-        
 
-        
+    
 
-      </div>
-      <div class="article-entry">
-        
-          <p>换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞了好久，最终解决了。</p>
+    
+
+  </div>
+  <div class="article-entry">
+    <p>换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞了好久，最终解决了。</p>
 <h4 id="1-拓展及Nugget"><a href="#1-拓展及Nugget" class="headerlink" title="1.拓展及Nugget"></a>1.拓展及Nugget</h4><p>Nuget: ReportViewerCore.Winform</p>
 <p>拓展: Microsoft RDLC Report Designer 2022</p>
 <h4 id="2-ReportViewer-Control"><a href="#2-ReportViewer-Control" class="headerlink" title="2.ReportViewer Control"></a>2.ReportViewer Control</h4><p>安装完拓展和Nugget包后，就可以在Tools里面找到ReportViewer控件了。添加进Winform后，ReportViewer并不会显示在Design界面里。需要在Winform.Designer.vb中加入：</p>
@@ -200,106 +184,29 @@
 <h5 id="2-rdlc文件就直接放在主目录下，不要放在新建的文件夹中。"><a href="#2-rdlc文件就直接放在主目录下，不要放在新建的文件夹中。" class="headerlink" title="2.rdlc文件就直接放在主目录下，不要放在新建的文件夹中。"></a>2.rdlc文件就直接放在主目录下，不要放在新建的文件夹中。</h5><p>原博主用的是C#，我不知道是不是因为这个原因，经过我自己的测试，VB的话只能放在主目录里。</p>
 <h4 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h4><p>千万，不要用VS2022。都2023年了，Mysql Connector竟然都不支持…当然，这可能是Mysql的问题。</p>
 
-        
-      </div>
-    </div>
-
-  
-
-  
-  
+  </div>
+  <footer class="article-footer">
     
-  
-
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2022/11/04/Net6.0%20ReportViewer%20RDLC/" >
-  
-</a>
-
-      </h3>
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
       
-
-      <div class="article-info">
-        <a href="/2022/11/04/Net6.0%20ReportViewer%20RDLC/"><span class="article-date">
-  2022-11-04
-</span>
-</a>
+          <img src="/images/cc/by.png">
         
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
 
-        
 
-      </div>
-      <div class="article-entry">
-        
-          <p>换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞了好久，最终解决了。</p>
-<h4 id="1-拓展及Nugget"><a href="#1-拓展及Nugget" class="headerlink" title="1.拓展及Nugget"></a>1.拓展及Nugget</h4><p>Nuget: ReportViewerCore.Winform</p>
-<p>拓展: Microsoft RDLC Report Designer 2022</p>
-<h4 id="2-ReportViewer-Control"><a href="#2-ReportViewer-Control" class="headerlink" title="2.ReportViewer Control"></a>2.ReportViewer Control</h4><p>安装完拓展和Nugget包后，就可以在Tools里面找到ReportViewer控件了。添加进Winform后，ReportViewer并不会显示在Design界面里。需要在Winform.Designer.vb中加入：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Me.Control.Add(Me.ReportViewer1)</span><br></pre></td></tr></table></figure>
-
-<p>添加完后，Design界面里就会显示ReportViewer控件，但依然没法选中修改属性。</p>
-<h5 id="1-重新生产解决方案"><a href="#1-重新生产解决方案" class="headerlink" title="1.重新生产解决方案"></a>1.重新生产解决方案</h5><h5 id="2-在Winform属性中选择ReportViewer1"><a href="#2-在Winform属性中选择ReportViewer1" class="headerlink" title="2.在Winform属性中选择ReportViewer1"></a>2.在Winform属性中选择ReportViewer1</h5><h5 id><a href="#" class="headerlink" title></a><img src="/2022/11/04/Net6.0%20ReportViewer%20RDLC/Users\kumaru\AppData\Roaming\Typora\typora-user-images\image-20221104180615341.png" alt="image-20221104180615341"></h5><p>或者直接点击设计界面下方的ReportViewer即可。</p>
-<h4 id="3-关联rdlc报表文件"><a href="#3-关联rdlc报表文件" class="headerlink" title="3.关联rdlc报表文件"></a>3.关联rdlc报表文件</h4><h4 id="-1"><a href="#-1" class="headerlink" title></a><img src="/2022/11/04/Net6.0%20ReportViewer%20RDLC/Users\kumaru\AppData\Roaming\Typora\typora-user-images\image-20221104180940498.png" alt="image-20221104180940498"></h4><p>将rdlc文件属性中的生产操作改为嵌入的资源-Embedded Resource</p>
-<p>Winform Load事件中：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Private Sub Winform_Load(sender As Object, e As EventArgs) Handles MyBase.Load</span><br><span class="line">        ReportViewer1.LocalReport.ReportEmbeddedResource = &quot;Winform.Report.rdlc&quot;</span><br><span class="line">        ReportViewer1.RefreshReport()</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
-
-<p>注意！！我自己在这一步卡了很久，视屏说老哥说这个路径是 SolutionName.ProjectName.NameSpace.Report.rdlc。我怎么试都加载不了Report。</p>
-<h5 id="1-Solution-Name和Project-Name中不能有中文"><a href="#1-Solution-Name和Project-Name中不能有中文" class="headerlink" title="1.Solution Name和Project Name中不能有中文"></a>1.Solution Name和Project Name中不能有中文</h5><p>我自己试下来，有中文就是不可以。然后直接改了Solution Name和Project Name。不过VS2022里直接改就好了，不像之前的版本，还需要替换就很麻烦。</p>
-<h5 id="2-rdlc文件就直接放在主目录下，不要放在新建的文件夹中。"><a href="#2-rdlc文件就直接放在主目录下，不要放在新建的文件夹中。" class="headerlink" title="2.rdlc文件就直接放在主目录下，不要放在新建的文件夹中。"></a>2.rdlc文件就直接放在主目录下，不要放在新建的文件夹中。</h5><p>原博主用的是C#，我不知道是不是因为这个原因，经过我自己的测试，VB的话只能放在主目录里。</p>
-<h4 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h4><p>千万，不要用VS2022。都2023年了，Mysql Connector竟然都不支持…当然，这可能是Mysql的问题。</p>
-
-        
-      </div>
-    </div>
-
-  
-
-  
-  
     
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2022/11/04/hello-world/" >
-  Hello World
-</a>
+  </footer>
+</article>
 
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2022/11/04/hello-world/"><span class="article-date">
-  2022-11-04
-</span>
-</a>
-        
-
-        
-
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-        
-      </div>
-    </div>
-
-  
 
 
 
