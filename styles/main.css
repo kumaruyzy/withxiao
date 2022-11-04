@@ -406,6 +406,17 @@ body {
   .sidebar .title {
     display: none;
   }
+  .sidebar .avatar {
+    padding-left: 165px;
+  }
+  .sidebar .author {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .sidebar .description {
+    font-size: 14px;
+    padding-right: 15px;
+  }
   .sidebar .nav > li > a {
     padding: 5px 10px;
   }
