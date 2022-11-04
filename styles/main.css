@@ -259,41 +259,24 @@ body {
   color: #fff;
 }
 .sidebar .title a:hover {
-  color: #cfe3cb;
+  color: #fff;
 }
 .sidebar .subtitle {
   font-size: 14px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.sidebar .info {
-  display: table;
-  width: 100%;
-  margin-top: 20px;
-}
-.sidebar .info > * {
-  display: table-cell;
-  vertical-align: bottom;
-}
-.sidebar .info .content {
-  padding-left: 10px;
-}
-.sidebar .author {
-  margin-top: 0.5em;
-}
-.sidebar .description {
-  font-size: 14px;
-}
 .sidebar .avatar {
   width: 140px;
+  padding-left: 250px;
+  margin-top: 35px;
 }
 .sidebar .avatar img {
   width: 120px;
   height: 120px;
-  border: 5px solid #d3d3d3;
-  border-radius: 2px;
 }
 .sidebar .nav {
+  margin-top: 25px;
   padding-left: 0;
 }
 .sidebar .nav > li {
@@ -303,13 +286,24 @@ body {
 .sidebar .nav > li > a {
   display: block;
   padding: 5px 25px;
-  color: #cfe3cb;
+  color: #fff;
   border-right: 5px solid transparent;
 }
 .sidebar .nav > li > a:hover {
-  background-color: #808080;
-  color: #fff;
-  border-right: 5px solid #d3d3d3;
+  background-color: #fff;
+  color: #333;
+  border-right: 5px solid transparent;
+}
+.sidebar .info .content {
+  padding-left: 10px;
+}
+.sidebar .author {
+  font-size: 14px;
+  padding-right: 30px;
+}
+.sidebar .description {
+  font-size: 14px;
+  padding-right: 30px;
 }
 .sidebar .category-list,
 .sidebar .tag-list,
@@ -798,7 +792,7 @@ pre .javascript .function {
   color: #333;
 }
 .archives-wrap a.archive-year:hover {
-  color: #808080;
+  color: #fff;
 }
 .mobile-header {
   display: none;
@@ -819,7 +813,7 @@ pre .javascript .function {
     color: #fff;
   }
   .mobile-header .title:hover {
-    color: #cfe3cb;
+    color: #fff;
   }
   .mobile-header .sidebar-toggle {
     position: relative;
