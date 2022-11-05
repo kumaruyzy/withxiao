@@ -186,7 +186,7 @@
           <p>换新电脑后，安装了Visual Studio2022，建项目的时候看都没看直接变成了Net6.0。工程进展到一半的时候猜发现问题很大。首先Dataset没有Mysql，安装connector的时候，不支持vs2022。又因为是Net6.0，reportviewer也出现了各种问题。搜了很久解决方法，最后在YouTube上找到了唯一一个视频可以参考，但后续Localreport加载又出了问题，自己搞了好久，最终解决了。</p>
 <h4 id="1-拓展及Nugget"><a href="#1-拓展及Nugget" class="headerlink" title="1.拓展及Nugget"></a>1.拓展及Nugget</h4><p>Nuget: ReportViewerCore.Winform</p>
 <p>拓展: Microsoft RDLC Report Designer 2022</p>
-<h4 id="2-ReportViewer-Control"><a href="#2-ReportViewer-Control" class="headerlink" title="2.ReportViewer Control"></a>2.ReportViewer Control</h4><p>安装完拓展和Nugget包后，就可以在Tools里面找到ReportViewer控件了。添加进Winform后，ReportViewer并不会显示在Design界面里。需要在Winform.Designer.vb中加入：</p>
+<h4 id="2-ReportViewer-Control"><a href="#2-ReportViewer-Control" class="headerlink" title="2.ReportViewer Control"></a>2.ReportViewer Control</h4><p>安装完拓展和Nuget包后，就可以在Tools里面找到ReportViewer控件了。添加进Winform后，ReportViewer并不会显示在Design界面里。需要在Winform.Designer.vb中加入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Me.Control.Add(Me.ReportViewer1)</span><br></pre></td></tr></table></figure>
 
 <p>添加完后，Design界面里就会显示ReportViewer控件，但依然没法选中修改属性。</p>
