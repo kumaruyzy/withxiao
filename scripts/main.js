@@ -1,6 +1,11 @@
 (function() {
   'use strict';
 
+// 引入自定义css
+@import '_custom/mouse.css'
+
+
+
   // hide scrollbar
   Ps.initialize($('.sidebar')[0]);
 
